@@ -1,5 +1,0 @@
-hours = float(input('Enter hours\n'))
-rate = float(input('Enter rate\n'))
-pay = str(hours * rate)
-print('Pay: ' + pay)
-input()
