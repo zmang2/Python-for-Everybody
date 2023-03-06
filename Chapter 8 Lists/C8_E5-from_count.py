@@ -30,14 +30,14 @@
 # cwen@iupui.edu
 # There were 27 lines in the file with From as the first word
 
-#file = open(input("Enter file name: "))
-file = open("mbox-short.txt")
+file = open(input("Enter file name: "))
+#file = open("mbox-short.txt")
 count = 0
 
 for line in file:
     if line.startswith("From:") and len(line)!= 0:
         words = line.split()
-        print(words)
+        print(words[1])
         count = count+1
 
 print("There were",count,"lines in the file with From as the first word")
